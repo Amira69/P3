@@ -3,7 +3,7 @@
 
 @section('menu')
      <h1>Lorem Ipsum Generator</h1>
-     <img src="/img/cartoon-crow.png" alt="lorem cartton">
+     <img src="/img/cartoon--crow.png" alt="lorem cartton">
 
      <form action="/loremipsum" method="POST">
 

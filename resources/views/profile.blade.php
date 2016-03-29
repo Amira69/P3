@@ -2,7 +2,7 @@
 
 @section('menu')
     <h1>Random User Generator</h1>
-    <img src="/img/funny-crow.png" alt="cartoon barcode">
+    <img src="/img/funny--crow.png" alt="cartoon barcode">
 
     <form action="/profile" method="POST">
         {{ csrf_field() }} <br>

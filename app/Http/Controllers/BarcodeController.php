@@ -18,6 +18,7 @@ class BarcodeController extends Controller{
         return view('barcode')->with('nav1',"")
             ->with('nav2',"")
             ->with('nav3','active')
+            ->with('object', 'code39')
             ->with('imageResource',"");
     }
 
@@ -33,10 +34,16 @@ class BarcodeController extends Controller{
                 $mask = 'required|alpha_num|max:20';
                 break;
             case 'codabar' :
-                $mask = 'required|numeric|max:20';
+                $mask = 'required|numeric';
                 break;
             case 'code25'  :
-                $mask = 'required|numeric|max:20';
+                $mask = 'required|numeric';
+                break;
+            case 'ean2'    :
+                $mask = 'required|numeric';
+                break;
+            default        :
+                $mask = 'required|numeric';
                 break;
         }
         // server validation
@@ -58,14 +65,18 @@ class BarcodeController extends Controller{
         $imageResource = $renderer->draw();
        # $renderResource = $renderer->render();
         $imageFile = public_path().'/barcodes/'.$request['text'].'.jpg';
-        imagejpeg($imageResource,$imageFile);
+        // delete previous
+        // exec("rm -rf {$imageFile}");
 
+        imagejpeg($imageResource,$imageFile);
+        imagedestroy($imageResource);
         // display in view
 
         return view('barcode')->with('nav1',"")
             ->with('nav2',"")
             ->with('nav3','active')
             ->with('text',$request['text'])
+            ->with('object',$request['object'])
             ->with('imageResource',$imageResource);
 
     }

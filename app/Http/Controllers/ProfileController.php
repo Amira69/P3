@@ -34,7 +34,7 @@ class ProfileController extends Controller
             $data[$i]['phone'] = $profile->phoneNumber;
             $data[$i]['birthday'] = $profile->date($format = 'Y-m-d', $max = '1980-1-1');
             $data[$i]['text'] = $profile->text($maxNbChars = 100);
-            $data[$i]['photo'] = $profile->imageUrl($width = 168, $height = 126);
+            $data[$i]['photo'] = $profile->imageUrl($width = 168, $height = 126, 'cats');
         }
 
         return view('profile')->with('nav1',"")
