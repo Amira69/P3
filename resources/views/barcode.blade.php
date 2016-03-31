@@ -44,9 +44,9 @@
 
 @section('content')
         @if ($imageResource)
-            <h1>{{$object}}</h1>
+            <h1 class="text-center">{{$object}}</h1>
             <div id="barcode-image" >
-            <img src='/barcodes/{{$text}}.jpg?nocache=<?php echo time(); ?>' alt="barcode">
+            <img src='/barcodes/{{$text}}.jpg?nocache=<?php echo time(); ?>' alt="barcode" class="img-responsive">
             </div>
 
         @endif

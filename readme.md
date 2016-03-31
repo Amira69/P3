@@ -8,7 +8,7 @@
 application in addition to blade, validation and views
 
 ## Demo
-[P3 Demo](https://youtu.be/??)
+[P3 Demo](https://youtu.be/gwK-ywZ0jzs)
 
 ## Details for teaching team
 

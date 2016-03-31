@@ -21,23 +21,23 @@
 
 <div class="container-fluid">
     <div class="row" id="home">
-        <div class="col-xs-4 col-md-4">
+        <div class="col-xs-12 col-md-4">
             <a href="/loremipsum">
-                <img src="/img/cartoon--crow.png" alt="cartoon lorem">
+                <img src="/img/cartoon--crow.png" alt="cartoon lorem" class="img-responsive">
                 <h1>Lorem Ipsum Generator</h1>
             </a>
             <p>Starting with a surprising vigour</p>
         </div>
-        <div class="col-xs-4 col-md-4">
+        <div class="col-xs-12 col-md-4">
             <a href="/profile">
-                <img src="/img/funny--crow.png" alt="cartoon profile">
+                <img src="/img/funny--crow.png" alt="cartoon profile" class="img-responsive">
                 <h1>Random User Generator</h1>
             </a>
             <p>One moment, at my beck and call!</p>
         </div>
-        <div class="col-xs-4 col-md-4">
+        <div class="col-xs-12 col-md-4">
             <a href="/barcode">
-                <img src="/img/creative--barcode.png" alt="cartoon barcodes">
+                <img src="/img/creative--barcode.png" alt="cartoon barcodes" class="img-responsive">
                 <h1>User Barcode Renderer</h1>
             </a>
             <p>Getter crow</p>

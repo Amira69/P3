@@ -17,3 +17,7 @@
 #bartext {
     width: 25ch;
 }
+
+.nav {
+    display: block;
+}
